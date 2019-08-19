@@ -50,6 +50,20 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.25em")
                 .setHeight("2.6666666666666665em")
                 .setCaption("Salário")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "Message",
+                            "This is"
+                        ],
+                        "method":"pop",
+                        "return":false,
+                        "event":1
+                    }
+                ])
             );
             
             host.xui_ui_panel8.append(
